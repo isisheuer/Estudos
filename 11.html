@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+        <title>Exercício 11</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #2d2d3a;
+            }
+
+            .chat-container {
+                background-color: #20202a;
+                position:absolute;
+                width: 300px;
+                padding: 10px;
+                border-radius: 10px;
+                bottom:0px;
+                right:0px;
+            }
+
+            .chat {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .msg {
+                background-color: #e0e0e0;
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+            }
+
+            .msg img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .msg-time {
+                font-size: 10px;
+                color: #777;
+                position: absolute;
+                bottom: -12px;
+                right: 5px;
+            }
+
+            .rsp {
+                background-color: #FFC107; 
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+                margin-left: auto;
+                text-align: right;
+            }
+
+            .rsp img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+            .rsp-time {
+                font-size: 10px;
+                color: #ddd;
+                position: absolute;
+                bottom: -12px;
+                left: 5px;
+            }
+
+            .input-section {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .input-section input[type="text"] {
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .input-section input[type="submit"] {
+                width: 18%;
+                background-color: #FFC107; 
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .input-section input[type="submit"]:hover {
+                background-color: #2d2d3a;
+                color: #ddd;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <div class="chat">
+                <div class="msg">
+                    <img src="../assets/img/avatar.png" alt="Foto avatar" class="avatar"> Olá, tudo bem?
+                    <span class="msg-time">00:50</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="rsp">
+                    Estou bem sim, e você?
+                    <img src="../assets/img/IMGhudsaw.jpg" alt="Foto Hudson" class="avatar">
+                    <span class="rsp-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="msg">
+                    <img src="../assets/img/avatar.png" alt="Foto avatar" class="avatar"> Vamos sair hoje? Sabe, conversar e Lorem ipsum dolor sit amet consectetur...
+                    <span class="msg-time">01:01</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="rsp">
+                    Criatura...
+                    <img src="../assets/img/IMGhudsaw.jpg" alt="Foto Hudson" class="avatar">
+                    <span class="rsp-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input id="msg" type="text" placeholder="Digite sua mensagem">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </body>
+</html>

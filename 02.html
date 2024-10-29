@@ -3,83 +3,25 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="../style.css">
 		<title>Exercício 2</title>
-        <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-            }
-
-            body{
-                padding: 0px;
-            }
-            .container{
-                display: grid;
-                grid-template-areas:
-                "header header  header  header"
-                "cabeca main    main    aside"
-                "nav    main    main    bside"
-                "nav    rodape  rodape  rodape";
-                .header{grid-area: header;}
-                .navegacao{grid-area: nav;}
-                .cabeca{grid-area: cabeca;}
-                .main{grid-area: main;}
-                .aside{grid-area: aside;}
-                .bside{grid-area: bside;}
-                .rodape{grid-area: rodape;}
-                grid-template-rows: 20vh 15vh 50vh 15vh;
-                grid-template-columns: 25vw 25vw 25vw 25vw;
-            }
-
-            .header {
-                background-color: #2d2d3a;
-                padding: 10px;
-                display: flex;
-                align-items: center;
-            }
-
-            span{
-                display: inline-block;
-                width: 50px;
-                height: 50px;
-                margin: 10px;
-                background-color: #fff;
-                border-radius: 50%;
-            }
-    
-            .nav{
-                background-color: #20202a;
-                padding: 10px;
-            }
-
-            .cabeca, .aside{
-                background-color: #FFC107;
-                padding: 10px;
-            }
-
-            .main{
-                background-color: #2d2d3a;
-                padding: 10px;
-            }
-
-            .rodape{
-                background-color: #FFC107;
-                padding: 10px;
-            }
-
-        </style>
+		<link rel="stylesheet" type="text/css" href="../style.css">
 	</head>
 
 	<body>
-        <div class="container">
-            <div class="header">1</div>
-            <div class="navegacao">5</div>
-            <div class="cabeca">2</div>
-            <div class="main">3</div>
-            <div class="aside">4</div>
-            <div class="bside">6</div>
-            <div class="rodape">7</div>
+        <div class="secao">
+            <section id="dois">
+                <h4>O que são seletores CSS?</h4>
+                <p>Os seletores CSS são padrões que permitem selecionar elementos HTML para aplicar estilos a eles. Existem vários tipos de seletores, incluindo:
+                    
+                    <li>Seletores de Tipo: Seletor de elementos (e.g., div, h1, p).</li>
+                    <li>Seletores de Classe: Selecionam elementos com uma determinada classe (e.g., .minha-classe).</li>
+                    <li>Seletores de ID: Selecionam um elemento específico com um ID (e.g., #meu-id).</li>
+                    <li>Seletores de Atributo: Selecionam elementos com um atributo específico (e.g., [type="text"]).</li>
+                    <li>Seletores Combinados: Combinam seletores (e.g., div > p, ul li).</li>
+                    <li>Seletores Pseudo-classes: Selecionam elementos em um estado específico (e.g., a:hover).</li>
+                    <li>Seletores Pseudo-elementos: Selecionam partes de um elemento (e.g., p::first-line).</li>
+    </p
+            </section>
         </div>
     </body>
     

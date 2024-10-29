@@ -3,93 +3,33 @@
 	<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercício 3</title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
-		<title>Exercício 2</title>
         <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-                background-color: #fff
+            #paragrafo1
+            {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: bisque;
             }
-
-            body{
-                padding: 0px;
-                margin: 0px;
+            #paragrafo2
+            {
+                font-weight: 400;
+                background-color: blue;
             }
-            
-            *{border-radius: 10px;
-            margin: 10px;}
-            .container{
-                border-radius: 0px;
-                margin: 0px;
-                display: grid;
-                grid-template-areas:
-                "header header  empty   cabeca"
-                "nav    main    main    main"
-                "nav    main    main    main";
-                .header{grid-area: header;}
-                .navegacao{grid-area: nav;}
-                .cabeca{grid-area: cabeca;}
-                .main{grid-area: main;}
-                grid-template-rows: 32vh 32vh 31vh;
-                grid-template-columns: 29vw 19vw 30vw 19vw;
+            span
+            {
+                color: aqua;
             }
-
-            .header {
-                background-color: #2d2d3a;
-                padding: 10px;
-                display: flex;
-                align-items: center;
-            }
-
-            .navegacao{
-                background-color: #20202a;
-                padding: 10px;
-            }
-
-            .cabeca{
-                background-color: #FFC107;
-                padding: 10px;
-            }
-
-            .main{
-                background-color: #2d2d3a;
-                display: grid;
-                grid-template-areas:
-                "e  f   g"
-                "m  i   j";
-                .e{grid-area: e;}
-                .f{grid-area: f;}
-                .g{grid-area: g;}
-                .m{grid-area: m;}
-                .i{grid-area: i;}
-                .j{grid-area: j;}
-                grid-template-columns: 27% 46% 27%;
-                grid-template-rows: 50% 50%;
-            }
-
-            .e, .f, .g, .m, .i, .j{
-                background-color: #FFC107;
-                padding: 10px;
-            }
-
         </style>
 	</head>
 
 	<body>
-        <div class="container">
-            <div class="header">A</div>
-            <div class="cabeca">B</div>
-            <div class="navegacao">C</div>
-            <div class="main">
-                <div class="e">E</div>
-                <div class="f">F</div>
-                <div class="g">G</div>
-                <div class="m">M</div>
-                <div class="i">I</div>
-                <div class="j">J</div>
-            </div>
-            
+        <div class="secao">
+            <section id="tres">
+                <h4>Crie uma página HTML com um título <h1> e vários parágrafos contendo texto "Lorem Ipsum", Em cada parágrafo, use uma fonte e cor diferentes, além de marcar palavras específicas com a tag <span>, aplicando estilos personalizados a essas palavras.</h4>
+                <p id="paragrafo1">Lorem ipsum <span>dolor sit</span>, amet consectetur adipisicing elit. Ducimus, quidem? Aspernatur esse ipsam eaque sed dignissimos placeat exercitationem! Quaerat alias dicta illo <span>quidem minima</span> aut nisi ducimus est a quae?</p>
+    <p id="paragrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt saepe adipisci at voluptatem ab! Unde dolor neque debitis commodi adipisci soluta, quas eveniet, veritatis dolorum eius accusantium minus, temporibus nulla?</p>
+            </section>
         </div>
     </body>
     

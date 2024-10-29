@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+        <title>Exercício 12</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            header{
+                background-color: #2d2d3a;
+                top: 5px;
+                word-spacing: 30px;
+            }
+
+            body{
+                padding-top: 140px;
+                background-color: #2d2d3a;
+            }
+
+            .box{
+                background-color: #20202a;
+                text-align: center;
+                padding: 30px;
+                margin: 30px;
+                border-radius: 20px;
+            }
+
+            .box img{
+                width: 100%;
+                max-width: 400px;
+                margin: 20px 0;
+            }
+
+            .chat-container {
+                background-color: #20202a;
+                position:fixed;
+                width: 300px;
+                padding: 10px;
+                border-radius: 10px;
+                bottom:5px;
+                right:5px;
+            }
+
+            .chat {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .msg {
+                background-color: #e0e0e0;
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+            }
+
+            .msg img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .msg-time {
+                font-size: 10px;
+                color: #777;
+                position: absolute;
+                bottom: -12px;
+                right: 5px;
+            }
+
+            .rsp {
+                background-color: #FFC107; 
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+                margin-left: auto;
+                text-align: right;
+            }
+
+            .rsp img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+            .rsp-time {
+                font-size: 10px;
+                color: #ddd;
+                position: absolute;
+                bottom: -12px;
+                left: 5px;
+            }
+
+            .input-section {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .input-section input[type="text"] {
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            .input-section input[type="submit"] {
+                width: 18%;
+                background-color: #FFC107; 
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .input-section input[type="submit"]:hover, a:hover {
+                background-color: #2d2d3a;
+                color: #ddd;
+            }
+
+        </style>
+    </head>
+    
+    <header>
+        <nav>
+            <img src="../assets/img/home.png" class="foto">
+            <a href="12.html">Home</a>
+            <a href="../curriculo.html">Sobre</a>
+            <a href="mailto:hudsonrb@gmail.com">Contato</a>
+        </nav>
+    </header>
+
+    <body>
+        <div class="box">
+            <img src="../assets/img/comida.png" alt="Imagem de Comida">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Doloremque, soluta.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum culpa.</p>
+        </div>
+        <div class="box">
+            <img src="../assets/img/sorvete.png" alt="Imagem de Sorvete">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recusandae, dolorum.</p>
+        </div>  
+        <div class="box">
+            <img src="../assets/img/sorvete.png" alt="Imagem de Sorvete">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recusandae, dolorum.</p>
+        </div> 
+    </body>
+
+    <footer>
+        <div class="chat-container">
+            <div class="chat">
+                <div class="msg">
+                    <img src="../assets/img/avatar.png" alt="Foto avatar" class="avatar"> Olá, tudo bem?
+                    <span class="msg-time">00:50</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="rsp">
+                    Estou bem sim, e você?
+                    <img src="../assets/img/IMGhudsaw.jpg" alt="Foto Hudson" class="avatar">
+                    <span class="rsp-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="msg">
+                    <img src="../assets/img/avatar.png" alt="Foto avatar" class="avatar"> Vamos sair hoje? Sabe, conversar e Lorem ipsum dolor sit amet consectetur...
+                    <span class="msg-time">01:01</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="rsp">
+                    Criatura...
+                    <img src="../assets/img/IMGhudsaw.jpg" alt="Foto Hudson" class="avatar">
+                    <span class="rsp-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input id="msg" type="text" placeholder="Digite sua mensagem">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </footer>
+</html>

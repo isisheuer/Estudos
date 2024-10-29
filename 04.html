@@ -2,98 +2,19 @@
 <html lang="pt-br">
 	<head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="../style.css">
-		<title>Exercício 3</title>
-        <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-            }
+        <link rel="stylesheet" href="04.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
 
-            body{
-                padding: 0px;
-                display: grid;
-                grid-template-areas:
-                "head   head    head    head"
-                "laside   banner  banner  raside"
-                "laside   main    main    raside"
-                "laside   low    low    raside"
-                "footer   footer  footer  footer";
-                grid-template-rows: 10vh 10vh 60vh 10vh 10vh;
-            }
-            
-            @media(max-width:500px){
-                body{
-                    grid-template-areas: 
-                    "head"
-                    "banner"
-                    "laside"
-                    "main"
-                    "raside"
-                    "low"
-                    "footer"
-                    ;
-                    grid-template-rows: 10vh 10vh 5vh 50vh 5vh 10vh 10vh;
-                }
-            }
-                        
-            .d1 {
-                grid-area: head;
-                background-color: #2d2d3a;
-                padding: 10px;
-                display: flex;
-                align-items: center;
-            }
-    
-            .d2{
-                grid-area: laside;
-                background-color: #20202a;
-                padding: 10px;
-            }
-
-            .d3{
-                grid-area: banner;
-                background-color: #FFC107;
-                padding: 10px;
-            }
-
-            .d4{
-                grid-area: raside;
-                background-color: #20202a;
-                padding: 10px;
-            }
-            .d5{
-                grid-area: main;
-                background-color: #2d2d3a;
-                padding: 10px;
-            }
-
-            .d6{
-                grid-area: low;
-                background-color: #FFC107;
-                padding: 10px;
-            }
-            
-            .d7{
-                grid-area: footer;
-                background-color: #2d2d3a;
-                padding: 10px;
-            }
-
-
-        </style>
 	</head>
 
 	<body>
-        
-            <div class="d1">Header</div>
-            <div class="d2">Left</div>
-            <div class="d3">Banner</div>
-            <div class="d4">Right</div>
-            <div class="d5">Main</div>
-            <div class="d6">Low</div>
-            <div class="d7">Rodape</div>
-        
+        <div class="secao">
+            <section id="quatro">
+                <h1>Como podemos incluir CSS em documentos HTML?</h1>
+                <p>Lorem</p>
+    <h1 style="background-color: aqua;">Exemplo de título</h1>
+            </section>
+        </div>
     </body>
     

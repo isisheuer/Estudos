@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<title>Exercício 9</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            
+            .box{
+                height: 20vh;
+            }
+
+            .box1{
+                height: 20vh;
+                width: 23vw;
+                display: inline-block;
+            }
+
+            .box2{
+                height: 20vh;
+                width: 23.0vw;
+                position:absolute;
+            }
+
+            .container{
+                position: relative;
+                height: 90vh;
+                width: 90vw;
+            }
+
+            #box1{
+                background-color: #d607ff;
+            }
+            #box2{
+                background-color: #008000;
+            }
+            #box3{
+                background-color: #ff0000;
+            }
+            #box4{
+                background-color: #ffff00;
+            }
+            #box5{
+                background-color: #d607ff;
+                right:38%;
+                top:38%;
+            }
+            #box6{
+                background-color: #008000;
+                right:0px;
+                bottom:0px;
+                
+            }
+            #box7{
+                background-color: #ff0000;
+                top:0px;
+                left:0px;
+
+            }
+            #box8{
+                background-color: #ffff00;
+                top:0px;
+                right:0px;
+            }
+            #box9{
+                background-color: #0000ff;
+                bottom:0px;
+                left:0px;
+            }
+        </style>
+	</head>
+
+	<body>
+        <div class="secao">
+            <section id="nove">
+                <h4>Reconstrua o documento HTML  abaixo, e explique porquê da exibição ser assim.</h4>
+                <p>height: 20vh;</p>
+                <div class="box" id="box1">1</div><div class="box" id="box2">2</div><div class="box" id="box3">3</div><div class="box" id="box4">4</div>
+                <p>display: inline-block;</p>
+                <div class="box1" id="box1">1</div><div class="box1" id="box2">2</div><div class="box1" id="box3">3</div><div class="box1" id="box4">4</div>
+                <p>position</p>
+                <div class="container">
+                <div class="box2" id="box5">5</div><div class="box2" id="box6">6</div><div class="box2" id="box7">7</div><div class="box2" id="box8">8</div><div class="box2" id="box9">9</div>
+                </div>
+            </section>
+        </div>
+    </body>
+    
