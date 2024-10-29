@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Formulário</title>
+    <style>
+        #formulario{
+            padding: 20px;
+            margin: 20px auto; 
+            font-family: 'Arial', sans-serif;
+            font-size: 20px;
+            color: #000000;
+            max-width: 1000px;
+            background-color: #caddcd;
+            text-align: left;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Tela de Formulário</h1>
+        <form>
+            <label for="Nome">Nome</label>
+            <input id="Nome" type="text">
+            <br>
+            <label for="E-mail">E-mail</label>
+            <input id="E-mail" type="text">
+            <br>
+            <label for="Senha">Senha</label>
+            <input id="Senha" type="password">
+            <br>
+            <label for="Confirmação de Senha">Confirmação de Senha</label>
+            <input id="Confirmação de Senha" type="password">
+            <br>
+            <label for="Termos">Aceito os termos: </label>
+            <input id="Termos" type="checkbox">
+            <br>
+
+            <label for="Masculino">Masculino</label>
+            <input id="Masculino" type="radio" name="genero" value="Masculino">
+            <br>
+            <label for= "Feminino">Feminino</label>
+            <input id="Feminino" type="radio" name="genero" value="Feminino">
+
+
+            <br>
+            <input type="submit" value="Cadastrar">
+            
+        </form>
+
+
+
+
+    </div>
+    
+</body>
+</html>
