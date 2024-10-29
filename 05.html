@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+        <title>Exercício 5</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body {
+                background-color: #2d2d3a;
+           
+            }
+
+            .chat-container {
+                height: 60vh;
+                width: 100vw;
+                padding: 20px;
+                border-radius: 10px;
+                border: #000 solid 1px;
+                display: flex;
+                flex-direction: row; 
+            }
+
+            .chat {
+                height: 55vh;
+                background-color: #20202a;
+                margin: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                align-items: flex-end;
+                background-size: 80%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+            .chat:hover{
+                flex-grow: 1;
+            }
+                       
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid #ddd;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="chat-container" >
+            <div class="chat" style="background-image: url('../assets/img/11.png')">
+                <img src="../assets/img/11.png" class="avatar">
+            </div>
+
+            <div class="chat" style="background-image: url('../assets/img/12.png')">
+                <img src="../assets/img/12.png" class="avatar">
+            </div>
+
+            <div class="chat" style="background-image: url('../assets/img/13.png')">
+                <img src="../assets/img/13.png" class="avatar">
+            </div>
+
+            <div class="chat" style="background-image: url('../assets/img/14.png')">
+                <img src="../assets/img/14.png" class="avatar">
+            </div>
+
+            <div class="chat" style="background-image: url('../assets/img/15.png')">
+                <img src="../assets/img/15.png" class="avatar">
+            </div>
+        </div>
+    </body>
+</html>

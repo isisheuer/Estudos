@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+        <title>Exercício 3</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0px;
+            }
+
+            body {
+                background-color: #2d2d3a;
+                display: flex;
+                justify-content: center;               
+            }
+
+            .chat-container {
+                background-color: #20202a;
+                width: 350px;
+                padding: 20px;
+                border-radius: 10px;
+                position: absolute;
+                top: 0px;
+            }
+
+            .chat {
+                display: flex;
+                align-items: center;
+                padding: 10px 0;
+                border-bottom: 1px solid #ddd;
+            }
+            .chat:last-child{
+                border-bottom: none;
+            }
+
+            .msg {
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .avatar {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                border: 1px solid #ddd;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="chat-container">
+            <div class="chat">
+                <img src="../assets/img/11.png" class="avatar">
+                <div class="msg">
+                    <h3>Bárbaro</h3>
+                    <p>Tank com 15 de dano e 1000 de Vida</p>                    
+                </div>
+            </div>
+
+            <div class="chat">
+                <img src="../assets/img/12.png" class="avatar">
+                <div class="msg">
+                    <h3>Caçadora</h3>
+                    <p>Atiradora com 20 de dano e 600 de Vida</p>                    
+                </div>
+            </div>
+
+            <div class="chat">
+                <img src="../assets/img/13.png" class="avatar">
+                <div class="msg">
+                    <h3>Maga</h3>
+                    <p>Feiticeira com 25 de dano e 400 de Vida</p>                    
+                </div>
+            </div>
+
+            <div class="chat">
+                <img src="../assets/img/14.png" class="avatar">
+                <div class="msg">
+                    <h3>Assassino</h3>
+                    <p>Assassino com 30 de dano e 200 de Vida</p>                    
+                </div>
+            </div>
+
+            <div class="chat">
+                <img src="../assets/img/15.png" class="avatar">
+                <div class="msg">
+                    <h3>Xamã</h3>
+                    <p>Curandeiro com 10 de cura e 800 de Vida</p>                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

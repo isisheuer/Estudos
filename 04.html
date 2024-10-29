@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<title>Exercício 4</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                padding: 0px;
+                height: 100vh;
+            }
+
+            .secao{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .topo {
+                display: flex;
+                background-color: #2d2d3a;
+                justify-content: flex-start;
+                align-items: center;
+                height: 20vh;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .circulo {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+
+            .principal {
+                display: flex;
+                flex-direction: row;
+                height: 80vh;
+                width: 100%;
+            }
+    
+            .nav{
+                display: flex;
+                background-color: #20202a;
+                justify-content: center;
+                align-items: center;
+                flex: 0.25;
+            }
+
+            .conteudo {
+                display: flex;
+                flex-direction: column;
+                flex: 0.75;
+            }
+
+            .cabeca{
+                display: flex;
+                background-color: #FFC107;
+                justify-content: center;
+                align-items: center;
+                flex: 0.15;
+            }
+            .main{
+                display: flex;
+                flex: 0.7;
+                background-color: #2d2d3a;
+                justify-content: center;
+                align-items: center;
+            }
+            .rodape{
+                display: flex;
+                background-color: #FFC107;
+                justify-content: center;
+                align-items: center;
+                flex: 0.15;
+            }
+
+        </style>
+	</head>
+
+	<body>
+        <div class="secao">
+            <div class="container">
+                <div class="topo">
+                    <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>                   
+                </div>
+
+                <div class="principal">
+                    <div class="nav">nav</div>
+
+                    <div class="conteudo">
+
+                        <div class="cabeca">cabeça</div>
+                        <div class="main">main</div>
+                        <div class="rodape">rodape</div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
