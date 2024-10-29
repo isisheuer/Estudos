@@ -4,94 +4,92 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../style.css">
-        <title>Exercício 3</title>
+		<title>Exercício 2</title>
         <style>
-            * {
-                margin: 0;
+            *{
+                margin: 0px;
                 padding: 0px;
+                background-color: #fff
             }
 
-            body {
+            body{
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            *{border-radius: 10px;
+            margin: 10px;}
+            .container{
+                border-radius: 0px;
+                margin: 0px;
+                display: grid;
+                grid-template-areas:
+                "header header  empty   cabeca"
+                "nav    main    main    main"
+                "nav    main    main    main";
+                .header{grid-area: header;}
+                .navegacao{grid-area: nav;}
+                .cabeca{grid-area: cabeca;}
+                .main{grid-area: main;}
+                grid-template-rows: 32vh 32vh 31vh;
+                grid-template-columns: 29vw 19vw 30vw 19vw;
+            }
+
+            .header {
                 background-color: #2d2d3a;
-                display: flex;
-                justify-content: center;               
-            }
-
-            .chat-container {
-                background-color: #20202a;
-                width: 350px;
-                padding: 20px;
-                border-radius: 10px;
-                position: absolute;
-                top: 0px;
-            }
-
-            .chat {
+                padding: 10px;
                 display: flex;
                 align-items: center;
-                padding: 10px 0;
-                border-bottom: 1px solid #ddd;
-            }
-            .chat:last-child{
-                border-bottom: none;
             }
 
-            .msg {
+            .navegacao{
+                background-color: #20202a;
                 padding: 10px;
-                border-radius: 10px;
             }
 
-            .avatar {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                margin-right: 10px;
-                border: 1px solid #ddd;
+            .cabeca{
+                background-color: #FFC107;
+                padding: 10px;
+            }
+
+            .main{
+                background-color: #2d2d3a;
+                display: grid;
+                grid-template-areas:
+                "e  f   g"
+                "m  i   j";
+                .e{grid-area: e;}
+                .f{grid-area: f;}
+                .g{grid-area: g;}
+                .m{grid-area: m;}
+                .i{grid-area: i;}
+                .j{grid-area: j;}
+                grid-template-columns: 27% 46% 27%;
+                grid-template-rows: 50% 50%;
+            }
+
+            .e, .f, .g, .m, .i, .j{
+                background-color: #FFC107;
+                padding: 10px;
             }
 
         </style>
-    </head>
-    <body>
-        <div class="chat-container">
-            <div class="chat">
-                <img src="../assets/img/11.png" class="avatar">
-                <div class="msg">
-                    <h3>Bárbaro</h3>
-                    <p>Tank com 15 de dano e 1000 de Vida</p>                    
-                </div>
-            </div>
+	</head>
 
-            <div class="chat">
-                <img src="../assets/img/12.png" class="avatar">
-                <div class="msg">
-                    <h3>Caçadora</h3>
-                    <p>Atiradora com 20 de dano e 600 de Vida</p>                    
-                </div>
+	<body>
+        <div class="container">
+            <div class="header">A</div>
+            <div class="cabeca">B</div>
+            <div class="navegacao">C</div>
+            <div class="main">
+                <div class="e">E</div>
+                <div class="f">F</div>
+                <div class="g">G</div>
+                <div class="m">M</div>
+                <div class="i">I</div>
+                <div class="j">J</div>
             </div>
-
-            <div class="chat">
-                <img src="../assets/img/13.png" class="avatar">
-                <div class="msg">
-                    <h3>Maga</h3>
-                    <p>Feiticeira com 25 de dano e 400 de Vida</p>                    
-                </div>
-            </div>
-
-            <div class="chat">
-                <img src="../assets/img/14.png" class="avatar">
-                <div class="msg">
-                    <h3>Assassino</h3>
-                    <p>Assassino com 30 de dano e 200 de Vida</p>                    
-                </div>
-            </div>
-
-            <div class="chat">
-                <img src="../assets/img/15.png" class="avatar">
-                <div class="msg">
-                    <h3>Xamã</h3>
-                    <p>Curandeiro com 10 de cura e 800 de Vida</p>                    
-                </div>
-            </div>
+            
         </div>
     </body>
-</html>
+    

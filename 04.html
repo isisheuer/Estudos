@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="../style.css">
-		<title>Exercício 4</title>
+		<title>Exercício 3</title>
         <style>
             *{
                 margin: 0px;
@@ -13,101 +13,87 @@
 
             body{
                 padding: 0px;
-                height: 100vh;
+                display: grid;
+                grid-template-areas:
+                "head   head    head    head"
+                "laside   banner  banner  raside"
+                "laside   main    main    raside"
+                "laside   low    low    raside"
+                "footer   footer  footer  footer";
+                grid-template-rows: 10vh 10vh 60vh 10vh 10vh;
             }
-
-            .secao{
-                margin: 0px;
-                padding: 0px;
+            
+            @media(max-width:500px){
+                body{
+                    grid-template-areas: 
+                    "head"
+                    "banner"
+                    "laside"
+                    "main"
+                    "raside"
+                    "low"
+                    "footer"
+                    ;
+                    grid-template-rows: 10vh 10vh 5vh 50vh 5vh 10vh 10vh;
+                }
             }
-
-            .container{
-                display: flex;
-                flex-direction: column;
-            }
-
-            .topo {
-                display: flex;
+                        
+            .d1 {
+                grid-area: head;
                 background-color: #2d2d3a;
-                justify-content: flex-start;
+                padding: 10px;
+                display: flex;
                 align-items: center;
-                height: 20vh;
-                width: 100%;
+            }
+    
+            .d2{
+                grid-area: laside;
+                background-color: #20202a;
                 padding: 10px;
             }
 
-            .circulo {
-                width: 50px;
-                height: 50px;
-                background-color: #fff;
-                border-radius: 50%;
+            .d3{
+                grid-area: banner;
+                background-color: #FFC107;
+                padding: 10px;
             }
 
-            .principal {
-                display: flex;
-                flex-direction: row;
-                height: 80vh;
-                width: 100%;
-            }
-    
-            .nav{
-                display: flex;
+            .d4{
+                grid-area: raside;
                 background-color: #20202a;
-                justify-content: center;
-                align-items: center;
-                flex: 0.25;
+                padding: 10px;
             }
-
-            .conteudo {
-                display: flex;
-                flex-direction: column;
-                flex: 0.75;
-            }
-
-            .cabeca{
-                display: flex;
-                background-color: #FFC107;
-                justify-content: center;
-                align-items: center;
-                flex: 0.15;
-            }
-            .main{
-                display: flex;
-                flex: 0.7;
+            .d5{
+                grid-area: main;
                 background-color: #2d2d3a;
-                justify-content: center;
-                align-items: center;
+                padding: 10px;
             }
-            .rodape{
-                display: flex;
+
+            .d6{
+                grid-area: low;
                 background-color: #FFC107;
-                justify-content: center;
-                align-items: center;
-                flex: 0.15;
+                padding: 10px;
             }
+            
+            .d7{
+                grid-area: footer;
+                background-color: #2d2d3a;
+                padding: 10px;
+            }
+
 
         </style>
 	</head>
 
 	<body>
-        <div class="secao">
-            <div class="container">
-                <div class="topo">
-                    <div class="circulo"></div><div class="circulo"></div><div class="circulo"></div>                   
-                </div>
-
-                <div class="principal">
-                    <div class="nav">nav</div>
-
-                    <div class="conteudo">
-
-                        <div class="cabeca">cabeça</div>
-                        <div class="main">main</div>
-                        <div class="rodape">rodape</div>
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
+        
+            <div class="d1">Header</div>
+            <div class="d2">Left</div>
+            <div class="d3">Banner</div>
+            <div class="d4">Right</div>
+            <div class="d5">Main</div>
+            <div class="d6">Low</div>
+            <div class="d7">Rodape</div>
+        
     </body>
     
